@@ -43,7 +43,7 @@
     <hr>
     <form class="" action="index.html" method="post">
       @yield('sec1')
-      
+
       @yield('sec2')
 
       @yield('sec3')

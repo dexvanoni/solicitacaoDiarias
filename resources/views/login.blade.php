@@ -15,7 +15,7 @@
       <div class="col-md-4"></div>
       <div class="col-md-4">
         <section class="login-form">
-          <form method="post" action="#" role="login">
+          <form method="post" action="" role="login">
             <center><h3>Ordem de Serviço de Solicitação de Diárias</h1></center>
             <img src="/bst/brasao.png" class="img-responsive" alt="" height="90em" width="90em" />
             <input type="login" name="email" placeholder="Login" required class="form-control input-lg" value="" />

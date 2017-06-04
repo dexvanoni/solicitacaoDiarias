@@ -11,4 +11,4 @@
 |
 */
 
-Route::get('/', 'OsController@index');
+Route::get('/', 'OsAdminController@index');
