@@ -186,9 +186,9 @@
       </div>
     </div>
     <p></p>
-    <!-- datas e horas SÉTIMA linha da tabela-->
   </div>
   <p></p>
+  <!-- datas e horas SÉTIMA linha da tabela-->
   <div class="row">
     <div class="col-md-4">
       <div class="input-group">
@@ -213,23 +213,24 @@
           <option value="1/2 Diária">1/2 DIÁRIA</option>
         </select>
       </div>
-      <div class="input-group">
-        <span style="font-size: 10px" class="input-group-addon" id="basic-addon1">23 - VALOR TOTAL (Diária + Adc. Desl.)</span>
+      <div title="Não havendo custos, favor marcar esta caixa!" style="border: 1px solid #D3D3D3; border-radius:3px" class="input-group">
+        <span style="border: 1px solid #D3D3D3; border-radius:3px; font-size: 10px" class="input-group-addon" id="basic-addon1">23 - VALOR TOTAL (Diária + Adc. Desl.)</span>
         <input type="text" id="valor_total" name="valor_total" class="form-control input-sm" placeholder="R$">
-        <input type="checkbox" id="ck_valor_total" value="Sem Custo">&nbsp&nbsp&nbsp&nbspSEM CUSTO
+        &nbsp&nbsp<input type="checkbox" id="ck_valor_total" title="Não havendo custos, favor marcar esta caixa!" value="Sem Custo">&nbsp&nbsp&nbsp&nbspSEM CUSTO
       </div>
     </div>
+    <!-- oitava linha da tabela-->
     <div class="col-md-4">
       <div class="input-group">
-        <span style="border: 1px solid #C0C0C0; border-radius:3px" class="input-group-addon" id="basic-addon1">24 - AUXÍLIO TRANSPORTE:&nbsp</span>
-        <div class="radio">
+        <span style="border: 1px solid #D3D3D3; border-radius:3px" class="input-group-addon" id="basic-addon1">24 - AUXÍLIO TRANSPORTE:&nbsp</span>
+        <div style="border: 1px solid #D3D3D3; border-radius:3px" class="radio">
           &nbsp&nbsp<label><input type="radio" name="rd_auxtransporte" id="rd_auxtransporte_sim" value="Sim">SIM</label><br>
           &nbsp&nbsp<label><input type="radio" name="rd_auxtransporte" id="rd_auxtransporte_nao" value="Não">NÃO</label>
         </div>
       </div>
       <div class="input-group">
-        <span style="border: 1px solid #C0C0C0; border-radius:3px" class="input-group-addon" id="basic-addon1">25 - AUXÍLIO ALIMENTAÇÃO:</span>
-        <div class="radio">
+        <span style="border: 1px solid #D3D3D3; border-radius:3px" class="input-group-addon" id="basic-addon1">25 - AUXÍLIO ALIMENTAÇÃO:</span>
+        <div style="border: 1px solid #D3D3D3; border-radius:3px" class="radio">
           &nbsp&nbsp<label><input type="radio" name="rd_auxalimentacao" id="rd_auxalimentacao_sim" value="Sim">SIM</label><br>
           &nbsp&nbsp<label><input type="radio" name="rd_auxalimentacao" id="rd_auxalimentacao_nao" value="Não">NÃO</label>
         </div>
@@ -237,4 +238,49 @@
     </div>
   </div>
   <p></p>
+  <!-- nona linha da tabela-->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">26</span>
+        <textarea id="fim_semana" name="fim_semana" class='form-control' placeholder='JUSTIFICATIVA DA MISSÃO EM FINAL DE SEMANA / FERIADO: (§ 2º, Art. 5º, do Dec. 5.992/2006)'></textarea>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <!-- decima linha da tabela-->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">27</span>
+        <textarea id="conveniencia_servico" name="conveniencia_servico" class='form-control' placeholder='JUSTIFICATIVA DA CONVENIÊNCIA DO SERVIÇO: (Inciso 2.1.3, da ICA 177-42)'></textarea>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <!-- decima primeira linha da tabela-->
+  <div class="row">
+    <div class="col-md-12">
+      <div class="input-group">
+        <span class="input-group-addon" id="basic-addon1">27</span>
+        <textarea id="justificativa" name="justificativa" class='form-control' placeholder='JUSTIFICATIVA: (Art 1º, da Portaria 1348/GC4/2015)'></textarea>
+      </div>
+    </div>
+  </div>
+  <p></p>
+  <!-- decima segunda linha da tabela- ASSINATURAS
+  Se SARAM do GAP-CG a assinatura é do CHEFE DIVISÃO e CHEFE GAP-CG e se ALA5 a assinatura
+  é do CMT ESQUADRÃO/CHEM e COMANDANTE DA BACG (NÚCLEO DE ALA 5)
+-->
+
+<!-- decima TERCEIRA linha da tabela-->
+<div class="row">
+  <div class="col-md-12">
+    <div class="input-group">
+      <span class="input-group-addon" id="basic-addon1">27</span>
+      <textarea id="justificativa" name="justificativa" class='form-control' placeholder='JUSTIFICATIVA: (Art 1º, da Portaria 1348/GC4/2015)'></textarea>
+    </div>
+  </div>
+</div>
+<p></p>
 @endsection
