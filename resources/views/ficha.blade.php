@@ -219,6 +219,22 @@
         <input type="checkbox" id="ck_valor_total" value="Sem Custo">&nbsp&nbsp&nbsp&nbspSEM CUSTO
       </div>
     </div>
+    <div class="col-md-4">
+      <div class="input-group">
+        <span style="border: 1px solid #C0C0C0; border-radius:3px" class="input-group-addon" id="basic-addon1">24 - AUXÍLIO TRANSPORTE:&nbsp</span>
+        <div class="radio">
+          &nbsp&nbsp<label><input type="radio" name="rd_auxtransporte" id="rd_auxtransporte_sim" value="Sim">SIM</label><br>
+          &nbsp&nbsp<label><input type="radio" name="rd_auxtransporte" id="rd_auxtransporte_nao" value="Não">NÃO</label>
+        </div>
+      </div>
+      <div class="input-group">
+        <span style="border: 1px solid #C0C0C0; border-radius:3px" class="input-group-addon" id="basic-addon1">25 - AUXÍLIO ALIMENTAÇÃO:</span>
+        <div class="radio">
+          &nbsp&nbsp<label><input type="radio" name="rd_auxalimentacao" id="rd_auxalimentacao_sim" value="Sim">SIM</label><br>
+          &nbsp&nbsp<label><input type="radio" name="rd_auxalimentacao" id="rd_auxalimentacao_nao" value="Não">NÃO</label>
+        </div>
+      </div>
+    </div>
   </div>
   <p></p>
 @endsection
