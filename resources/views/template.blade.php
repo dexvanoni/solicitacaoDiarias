@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/bst/css/bootstrap.min.css" rel="stylesheet">
+  <script src="/bst/js/jquery.min.js"></script>
 </head>
 <body>
   <!--Nav Bar-->
@@ -47,11 +48,11 @@
     <hr>
     <form class="" action="index.html" method="post">
       @yield('sec1')
-          @if ($unidade == "GAP-CG")
-              @yield('assGAP')
-          @else
-              @yield('assALA')
-          @endif
+      @if ($unidade == "GAP-CG")
+        @yield('assGAP')
+      @else
+        @yield('assALA')
+      @endif
       <hr>
       @yield('sec2')
       <hr>
@@ -59,7 +60,72 @@
       <hr>
     </form>
   </div>
-  <script src="/bst/js/jquery.min.js"></script>
+  <script type="text/javascript">
+  $( document ).ready(function() {
+    $('#camposExtras').hide();
+
+    $("#alteracao_servico_s").click(function(){
+      $('#camposExtras').show();
+    });
+    $("#alteracao_servico_n").click(function(){
+      $('#camposExtras').hide();
+    });
+  });
+  </script>
+  <!-- CALCULA OS IPUTS DE VALOR E QUANTIDADE DA TABELA DE CÔMPUTO DE DIÁRIAS-->
+  <!-- PRIMEIRA LINHA -->
+  <script type="text/javascript">
+  $(document).ready( function() {
+    $('#a, #a1').blur(function(){
+      var valor 		= $('#a').val();
+      var qt = $('#a1').val();
+      if(valor == "") valor = 0;
+      if(qt == "") qt = 0;
+      var resultado 	= parseFloat(valor) * parseFloat(qt);
+      $('#resultado1').val(resultado);
+    })
+  });
+  </script>
+  <!-- SEGUNDA LINHA -->
+  <script type="text/javascript">
+  $(document).ready( function() {
+    $('#b, #b1').blur(function(){
+      var valor 		= $('#b').val();
+      var qt = $('#b1').val();
+      if(valor == "") valor = 0;
+      if(qt == "") qt = 0;
+      var resultado 	= parseFloat(valor) * parseFloat(qt);
+      $('#resultado2').val(resultado);
+    })
+  });
+  </script>
+  <!-- TERCEIRA LINHA -->
+  <script type="text/javascript">
+  $(document).ready( function() {
+    $('#c, #c1').blur(function(){
+      var valor 		= $('#c').val();
+      var qt = $('#c1').val();
+      if(valor == "") valor = 0;
+      if(qt == "") qt = 0;
+      var resultado 	= parseFloat(valor) * parseFloat(qt);
+      $('#resultado3').val(resultado);
+    })
+  });
+  </script>
+  <!-- QUARTA LINHA -->
+  <script type="text/javascript">
+  $(document).ready( function() {
+    $('#d, #d1').blur(function(){
+      var valor 		= $('#d').val();
+      var qt = $('#d1').val();
+      if(valor == "") valor = 0;
+      if(qt == "") qt = 0;
+      var resultado 	= parseFloat(valor) * parseFloat(qt);
+      $('#resultado4').val(resultado);
+    })
+  });
+  </script>
+  <!--TERMINA CÁLCULO DA TABELA-->
   <script src="/bst/js/bootstrap.min.js"></script>
 </body>
 </html>
