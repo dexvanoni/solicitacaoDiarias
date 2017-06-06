@@ -3,7 +3,6 @@
 <head>
   <meta charset="utf-8">
   <title>@yield('title')</title>
-  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="/bst/css/bootstrap.min.css" rel="stylesheet">
@@ -49,7 +48,7 @@
       @yield('sec3')
     </form>
   </div>
+  <script src="/bst/js/jquery.min.js"></script>
+  <script src="/bst/js/bootstrap.min.js"></script>
 </body>
-<script src="/bst/js/jquery.min.js"></script>
-<script src="/bst/js/bootstrap.min.js"></script>
 </html>
