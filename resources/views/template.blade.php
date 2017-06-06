@@ -38,14 +38,25 @@
     </div><!-- /.container-fluid -->
   </nav>
   <div class="container">
+    <!-- TESTE DE UNIDADE PARA RETORNO DOS CAMPOS PARA ASSINATURA-->
+    @php
+    $unidade = "ALA5"
+    @endphp
+
     @yield('topo')
     <hr>
     <form class="" action="index.html" method="post">
       @yield('sec1')
-
+          @if ($unidade == "GAP-CG")
+              @yield('assGAP')
+          @else
+              @yield('assALA')
+          @endif
+      <hr>
       @yield('sec2')
-
+      <hr>
       @yield('sec3')
+      <hr>
     </form>
   </div>
   <script src="/bst/js/jquery.min.js"></script>
