@@ -16,3 +16,7 @@ Route::get('/', function (){
   return view('dashboard.index');
 });
 //Route::resource('pessoas', 'PessoasController', ['except' => 'show']);
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index');
