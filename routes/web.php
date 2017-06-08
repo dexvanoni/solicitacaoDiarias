@@ -12,5 +12,7 @@
 */
 
 //Route::get('/', 'PessoasController@index');
-//Route::get('/', 'ContaController@entrar');
-Route::resource('pessoas', 'PessoasController', ['except' => 'show']);
+Route::get('/', function (){
+  return view('dashboard.index');
+});
+//Route::resource('pessoas', 'PessoasController', ['except' => 'show']);
