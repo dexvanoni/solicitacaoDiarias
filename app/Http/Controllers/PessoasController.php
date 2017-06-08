@@ -3,22 +3,24 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Pessoa;
 
-class OsController extends Controller
+class PessoasController extends Controller
 {
   private $pessoa;
-  private $ficha;
 
-  public function __construct(Pessoa $pessoa, Ficha $ficha)
+  public function __construct(Pessoa $pessoa)
   {
     $this->pessoa = $pessoa;
-    $this->ficha = $ficha;
+
   }
 
   public function index()
   {
+
     $pessoa = $this->pessoa->all();
-    $ficha = $this->ficha->all();
+
+    $pessoa = $this->pessoa->all();
       $os = rand();
       $data = date('d/m/Y');
       $pcdp = intval( "0" . rand(1,9) . rand(0,9) . rand(0,9));

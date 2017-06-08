@@ -11,4 +11,8 @@
 |
 */
 
-Route::get('/', 'OsController@index');
+//Route::get('/', 'PessoasController@index');
+Route::get('/', function(){
+  return view('conta.login');
+});
+Route::resource('pessoas', 'PessoasController', ['except' => 'show']);

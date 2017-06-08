@@ -38,26 +38,11 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-  <div class="container">
-    <!-- TESTE DE UNIDADE PARA RETORNO DOS CAMPOS PARA ASSINATURA-->
-    @php
-    $unidade = "ALA5"
-    @endphp
 
-    @yield('topo')
-    <hr>
-    <form class="" action="index.html" method="post">
-      @yield('sec1')
-      @if ($unidade == "GAP-CG")
-        @yield('assGAP')
-      @else
-        @yield('assALA')
-      @endif
-      <hr>
-      @yield('sec2')
-      <hr>
-      @yield('sec3')
-    </form>
+  <div class="container">
+
+    @yield('content')
+
   </div>
   <script type="text/javascript">
   $( document ).ready(function() {
@@ -189,4 +174,5 @@
 
   <script src="/bst/js/bootstrap.min.js"></script>
 </body>
+<footer>Desenvolvido por ATIC-CG 2017</footer>
 </html>
