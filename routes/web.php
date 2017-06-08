@@ -12,7 +12,5 @@
 */
 
 //Route::get('/', 'PessoasController@index');
-Route::get('/', function(){
-  return view('conta.login');
-});
+//Route::get('/', 'ContaController@entrar');
 Route::resource('pessoas', 'PessoasController', ['except' => 'show']);

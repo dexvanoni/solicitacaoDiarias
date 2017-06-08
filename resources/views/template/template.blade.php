@@ -38,16 +38,30 @@
       </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
   </nav>
-
   <div class="container">
+    <!-- TESTE DE UNIDADE PARA RETORNO DOS CAMPOS PARA ASSINATURA-->
+    @php
+    $unidade = "ALA5"
+    @endphp
 
-    @yield('content')
-
+    @yield('topo')
+    <hr>
+    <form class="" action="index.html" method="post">
+      @yield('sec1')
+      @if ($unidade == "GAP-CG")
+        @yield('assGAP')
+      @else
+        @yield('assALA')
+      @endif
+      <hr>
+      @yield('sec2')
+      <hr>
+      @yield('sec3')
+    </form>
   </div>
   <script type="text/javascript">
   $( document ).ready(function() {
     $('#camposExtras').hide();
-
     $("#alteracao_servico_s").click(function(){
       $('#camposExtras').show();
     });
@@ -148,10 +162,8 @@
       var v3 		= $('#resultado3').val();
       var v4 		= $('#resultado4').val();
       var v5 		= $('#val_ac').val();
-
       var v6 		= $('#resultado_dias_a').val();
       var v7 		= $('#resultado_dias_b').val();
-
       if(v1 == "") v1 = 0;
       if(v2 == "") v2 = 0;
       if(v3 == "") v3 = 0;
@@ -159,13 +171,10 @@
       if(v5 == "") v5 = 0;
       if(v6 == "") v6 = 0;
       if(v7 == "") v7 = 0;
-
       var resultado1 	= parseFloat(v1) + parseFloat(v2) + parseFloat(v3) + parseFloat(v4) + parseFloat(v5);
       $('#resultado_soma').val(resultado1);
-
       var resultado2 	= parseFloat(v6) + parseFloat(v7);
       $('#resultado_descontos').val(resultado2);
-
       var resultado 	= parseFloat(resultado1) - parseFloat(resultado2);
       $('#resultado_total').val(resultado);
     })
@@ -174,5 +183,4 @@
 
   <script src="/bst/js/bootstrap.min.js"></script>
 </body>
-<footer>Desenvolvido por ATIC-CG 2017</footer>
 </html>
